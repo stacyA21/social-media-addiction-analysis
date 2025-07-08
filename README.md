@@ -1,13 +1,35 @@
 # social-media-addiction-analysis
 Final Project for SHARE 
-# Project Title
 
-__One Paragraph+__ 
-describing the project goes here. For example: This is a README template you would use to describe a scientific or data analysis project. Provide an overview of the goals of the project, how data was obtained, and other important details others or you in 6 months should be aware of.
+__Project Description__
+
+This is a data analysis project that aims to adress social media platforms and their influence on the mental health of young students.  The goals of the project is to uncover which platforms have negative influence on the mental health of students between the ages of ... and... This data was gathered from Kaggle The visualization of the results are represented on Tabluea Public page and the raw data clean up and analyses is done with python3. 
 
 ## Data
 
-Describe the dataset in more detail here if necessary
+The Data set is a table containing the columns :
+Student_ID, 
+Age,
+Gender,
+Academic_Level,
+Country,
+Avg_Daily_Usage_Hours,
+Most_Used_Platform,
+Affects_Academic_Performance,
+Sleep_Hours_Per_Night,
+Mental_Health_Score,
+Relationship_Status,
+Conflicts_Over_Social_Media,
+Addicted_Score
+
+In order to conduct this analyses I will use the following columns:
+Student_ID, 
+Age,
+Avg_Daily_Usage_Hours,
+Most_Used_Platform,
+Sleep_Hours_Per_Night,
+Mental_Health_Score,
+Addicted_Score
 
 __Data Contact__
 
