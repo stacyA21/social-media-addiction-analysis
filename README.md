@@ -33,12 +33,10 @@ Addicted_Score**
 
 __Data Contact__
 
-List a data contact that can be contacted for inqueries regarding archiving and/or removal of data. Two methods of contact should be left, including one that is outside / external to the current institution.
 
 * **Stacy Alves <stacy.alves21@gmail.com>** - Contact for inqueries regarding data.
 * **Kagle -  [(https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships)](url)
 
-Most scripts / analysis can be left as they often do not take up substantial amounts of space, so it is important to describe in detail how data should be handled.
 
 ## Getting Started
 
