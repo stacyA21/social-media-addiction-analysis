@@ -12,29 +12,35 @@ How does the use of different social media platforms affect the mental health sc
 
 ## Data Insight
 
-The Data set is a table containing the columns :
-*Student_ID,
-Age,
-Gender,
-Academic_Level,
-Country,
-Avg_Daily_Usage_Hours,
-Most_Used_Platform,
-Affects_Academic_Performance,
-Sleep_Hours_Per_Night,
-Mental_Health_Score,
-Relationship_Status,
-Conflicts_Over_Social_Media,
-Addicted_Score*
+The dataset consists of student responses and includes the following columns:
 
-In order to conduct this analyses I will use the following columns:
-**Student_ID, 
-Age,
-Avg_Daily_Usage_Hours,
-Most_Used_Platform,
-Sleep_Hours_Per_Night,
-Mental_Health_Score,
-Addicted_Score**
+- `Student_ID`  
+- `Age`  
+- `Gender`  
+- `Academic_Level`  
+- `Country`  
+- `Avg_Daily_Usage_Hours`  
+- `Most_Used_Platform`  
+- `Affects_Academic_Performance`  
+- `Sleep_Hours_Per_Night`  
+- `Mental_Health_Score`  
+- `Relationship_Status`  
+- `Conflicts_Over_Social_Media`  
+- `Addicted_Score`  
+
+### Columns Used in This Analysis
+
+For this project, the following columns are the focus:
+
+- **`Student_ID`** – Unique identifier for each participant  
+- **`Age`** – Age of the student  
+- **`Avg_Daily_Usage_Hours`** – Average hours spent on social media per day  
+- **`Most_Used_Platform`** – Primary social media platform used by the student  
+- **`Sleep_Hours_Per_Night`** – Average hours of sleep per night  
+- **`Mental_Health_Score`** – Self-reported mental health score  
+- **`Addicted_Score`** – A score estimating social media addiction level  
+
+These variables were selected because they are most relevant for exploring correlations between **social media usage** and **student mental health**.
 
 
 __Data Contact__
