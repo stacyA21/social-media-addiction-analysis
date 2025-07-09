@@ -3,9 +3,9 @@ My final project for SHARE Academy
 
 __Project Description__
 
-In the digital age, students are increasingly exposed to social media, which may have both positive and negative effects on mental well-being. This project explores usage patterns across platforms such as Instagram, TikTok, Snapchat, Facebook, and X (Twitter), and how they relate to self-reported mental health scores.
+In the digital age, students are increasingly exposed to social media, which can have both positive and negative impacts on mental well-being. This project analyzes usage patterns across platforms such as Instagram, TikTok, Snapchat, Facebook, and X (formerly Twitter), and investigates how these patterns relate to self-reported mental health scores.
 
-The goals of this project is to uncover which platforms have negative influence on the mental health of students between the ages of ... and... This data was gathered from Kaggle. The visualization of the results are represented on Tabluea Public page and the raw data clean up and analysis is done with python.
+The primary goal of this analysis is to identify which social media platforms may negatively influence the mental health of students aged 18 to 24. The dataset was sourced from Kaggle, and the analysis was conducted using Python for data cleaning and statistical modeling. Visualizations of the results are available on a Tableau Public dashboard, providing clear and interactive representations of key findings.
 
 __Research Question__
 How does the use of different social media platforms affect the mental health scores of students?
