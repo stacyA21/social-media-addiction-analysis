@@ -54,6 +54,8 @@ __Tools & Technologies__
 
 <li> Matplotlib / Seaborn: Data visualization
 
+<li> Tableau Public : Data Visualization </li>
+
 
 What are the primary analysis scripts/starting points? How would the analysis be rerun?
 
@@ -65,27 +67,30 @@ Give an example
 
 A step by step series of examples that tell you how to get a development/analysis env running
 
-Say what the step will be
+Clone Repository to Local 
 
 ```
-Give the example
+git clone https://github.com/your-username/social-media-mental-health.git
+cd social-media-mental-health
 ```
 
-And repeat
+Create and Activate Python Virtual Environment 
 
 ```
-until finished
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+```
+
+Create and Activate Python Virtual Environment 
+
+```
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
 ```
 
 End with an example of getting some data out of the system or using. It is also worth listing what the requirements are.
-
-## Publications
-
-List references with links to publications this analysis was used for.
-
- __The genetic basis of natural variation in Caenorhabditis elegans telomere length__<br />
-Cook DE, Zdraljevic S, Tanny RE, Seo B, Riccardi DD, Noble LM, Rockman MV, Alkema MJ, Braendle C, Kammenga JE, Wang J, Kruglyak L, Fe ́ lix MA, Lee J, Andersen EC. <br />
-2016. Genetics 204:371–383. DOI: https://doi.org/10.1534/genetics.116. 191148, PMID: 27449056
 
 ## Contributing
 
@@ -101,12 +106,3 @@ List all authors, their contributions, and how to contact; Preferably an interna
 
 * **Daniel E. Cook** - *Initial work* - [danielecook](https://github.com/danielecook); danielecook@gmail.com
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
