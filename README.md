@@ -111,5 +111,5 @@ Additional notes / precatuions / etc. to make users aware of.
 
 List all authors, their contributions, and how to contact; Preferably an internal and external form of contact.
 
-* **Daniel E. Cook** - *Initial work* - [danielecook](https://github.com/danielecook); danielecook@gmail.com
+* **Stacy Alves** - [StacyA](https://github.com/stacyA21); stacy.alves21@gmail.com
 
