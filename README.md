@@ -90,6 +90,13 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 ```
 
+Download necessary libraries and packages
+
+```
+pip install -r requirements.txt
+````
+
+
 End with an example of getting some data out of the system or using. It is also worth listing what the requirements are.
 
 ## Contributing
