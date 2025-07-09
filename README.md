@@ -3,9 +3,14 @@ My final project for SHARE Academy
 
 __Project Description__
 
-This is a data analysis project that aims to adress social media platforms and their influence on the mental health of young students.  The goals of the project is to uncover which platforms have negative influence on the mental health of students between the ages of ... and... This data was gathered from Kaggle The visualization of the results are represented on Tabluea Public page and the raw data clean up and analyses is done with python3. 
+In the digital age, students are increasingly exposed to social media, which may have both positive and negative effects on mental well-being. This project explores usage patterns across platforms such as Instagram, TikTok, Snapchat, Facebook, and X (Twitter), and how they relate to self-reported mental health scores.
 
-## Data
+The goals of this project is to uncover which platforms have negative influence on the mental health of students between the ages of ... and... This data was gathered from Kaggle. The visualization of the results are represented on Tabluea Public page and the raw data clean up and analysis is done with python.
+
+__Research Question__
+How does the use of different social media platforms affect the mental health scores of students?
+
+## Data Insight
 
 The Data set is a table containing the columns :
 *Student_ID,
@@ -31,6 +36,7 @@ Sleep_Hours_Per_Night,
 Mental_Health_Score,
 Addicted_Score**
 
+
 __Data Contact__
 
 
@@ -39,6 +45,15 @@ __Data Contact__
 
 
 ## Getting Started
+
+__Tools & Technologies__
+
+<li> Python: Core programming language
+
+<li> Pandas / NumPy: Data wrangling
+
+<li> Matplotlib / Seaborn: Data visualization
+
 
 What are the primary analysis scripts/starting points? How would the analysis be rerun?
 
