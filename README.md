@@ -1,5 +1,5 @@
-# social-media-addiction-analysis
-Final Project for SHARE 
+# Social media addiction analysis
+My final project for SHARE Academy  
 
 __Project Description__
 
