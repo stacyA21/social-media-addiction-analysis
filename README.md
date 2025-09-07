@@ -8,7 +8,13 @@ In the digital age, students are increasingly exposed to social media, which can
 The primary goal of this analysis is to identify which social media platforms may negatively influence the mental health of students aged 18 to 24. The dataset was sourced from Kaggle, and the analysis was conducted using Python for data cleaning and statistical modeling. Visualizations of the results are available on a Tableau Public dashboard, providing clear and interactive representations of key findings.
 
 __Research Question__
-How does the use of different social media platforms affect the mental health scores of students?
+How does social media platforms affect the mental health scores of students?
+
+To answer this question we will zoom into 3 factors: Gender, Age and Platform. 
+Question 1 : Is there a correlation between gender and mental health score?
+Question 2 : Which age group have a higher addicted score?
+Question 3 : Which Platforms have the highest addicted score and average usage?
+Question 4 : Is there a correlation between time spent on platforms and mental health scores?
 
 ## Data Insight
 
@@ -96,13 +102,13 @@ pip install -r requirements.txt
 
 ## Results
 
-Final Conclusion: 
 1. There is no significant difference in addiction score between genders. 
 2. There is a negative correlation between mental health score and addiction score. 
-3. Younger people are more likely to be addicted to social media. 
+3. Younger people are more likely to be addicted to social media.
 4. The most addictive platforms are Snapchat, TikTok, and Instagram. 
-5. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage. 
+5. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
 6. Different age groups have different platform preferences. 
+7. There is a negative correlation between time spent on social media and mental health score.
 
 ## Reflection
 
