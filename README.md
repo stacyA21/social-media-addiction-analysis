@@ -63,20 +63,12 @@ __Tools & Technologies__
 <li> Tableau Public : Data Visualization </li>
 
 
-What are the primary analysis scripts/starting points? How would the analysis be rerun?
-
-```
-Give an example
-```
-
 ### Requirements
-
-A step by step series of examples that tell you how to get a development/analysis env running
 
 Clone Repository to Local 
 
 ```
-git clone https://github.com/your-username/social-media-mental-health.git
+git clone https://github.com/stacyA21/social-media-mental-health.git
 cd social-media-mental-health
 ```
 
@@ -102,20 +94,19 @@ Download necessary libraries and packages
 pip install -r requirements.txt
 ````
 
-
-End with an example of getting some data out of the system or using. It is also worth listing what the requirements are.
-
 ## Results
 
+Final Conclusion: 
+1. There is no significant difference in addiction score between genders. 
+2. There is a negative correlation between mental health score and addiction score. 
+3. Younger people are more likely to be addicted to social media. 
+4. The most addictive platforms are Snapchat, TikTok, and Instagram. 
+5. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage. 
+6. Different age groups have different platform preferences. 
 
+## Reflection
 
-## Contributing
-
-Details regarding how to contribute. Coding style conventions, use of tests, etc.
-
-## Notes
-
-Additional notes / precatuions / etc. to make users aware of.
+Further analysis would be more insightful over the methods used on these platform to retain users. What is also interested is how WhatsApp and KaKao stand in such analysis and if these also have a negative effect. 
 
 ## Authors
 
