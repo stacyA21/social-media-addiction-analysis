@@ -1,14 +1,31 @@
-# Social media addiction analysis
+# Mind Over Media 
+## Analyzing Social Media’s Effects on Mental Health
+
 My final project for SHARE Academy  
+
+__Summary__
+
+This project analyzes how social media usage across social media platforms relates to the mental health of students aged 18 to 24. Using a Kaggle dataset, Python for data analysis, and Tableau for visualization, the study highlights potential correlations between platform usage and self-reported well-being.
 
 __Project Description__
 
-In the digital age, students are increasingly exposed to social media, which can have both positive and negative impacts on mental well-being. This project analyzes usage patterns across platforms such as Instagram, TikTok, Snapchat, Facebook, and X (formerly Twitter), and investigates how these patterns relate to self-reported mental health scores.
+In today’s digital age, social media plays a central role in students’ daily lives, shaping both positive and negative aspects of mental well-being. This project explores usage patterns across major platforms and examines their relationship to self-reported mental health scores.
 
-The primary goal of this analysis is to identify which social media platforms may negatively influence the mental health of students aged 18 to 24. The dataset was sourced from Kaggle, and the analysis was conducted using Python for data cleaning and statistical modeling. Visualizations of the results are available on a Tableau Public dashboard, providing clear and interactive representations of key findings.
+The primary aim is to identify potential correlations between platform usage and mental health among students aged 18 to 24. 
+While mental health is a complex and multifaceted issue, this analysis seeks to uncover trends and insights that may highlight platforms with greater negative impacts.
+
+The dataset was sourced from Kaggle, and the analysis was performed using Python for data cleaning, statistical modeling, and exploration. Results are visualized through an interactive Tableau Public dashboard, providing clear and accessible insights into the findings.
 
 __Research Question__
-How does the use of different social media platforms affect the mental health scores of students?
+
+Main question:
+How does social media platforms affect the mental health scores of students?
+
+To answer this question we will zoom into 3 factors: Gender, Age and Platform. 
+- Question 1 : To what extent is gender associated with differences in mental health scores?
+- Question 2 : Which age group demonstrates the highest levels of social media addiction?
+- Question 3 : Which platforms are most strongly linked to higher addiction scores and greater average usage?
+- Question 4 : How strongly is time spent on social media correlated with mental health scores?
 
 ## Data Insight
 
@@ -33,14 +50,14 @@ The dataset consists of student responses and includes the following columns:
 For this project, the following columns are the focus:
 
 - **`Student_ID`** – Unique identifier for each participant  
-- **`Age`** – Age of the student  
+- **`Age`** – Age of the student
+- **`Gender`** - self-reported gender, recorded as “Male” or “Female” to allow for demographic breakdowns in usage and outcome measures
 - **`Avg_Daily_Usage_Hours`** – Average hours spent on social media per day  
 - **`Most_Used_Platform`** – Primary social media platform used by the student  
 - **`Sleep_Hours_Per_Night`** – Average hours of sleep per night  
 - **`Mental_Health_Score`** – Self-reported mental health score  
-- **`Addicted_Score`** – A score estimating social media addiction level  
-
-These variables were selected because they are most relevant for exploring correlations between **social media usage** and **student mental health**.
+- **`Addicted_Score`** – A composite score from 1 (low addiction) to 10 (high addiction) based on a standardized survey scale (e.g., Bergen Social Media Addiction Scale), quantifying the degree of problematic usage.
+- **`Affects_Academic_Performance`** - A binary indicator (“Yes”/“No”) reflecting whether the student perceives their social media use as having a negative impact on their academic performance.
 
 
 __Data Contact__
@@ -63,20 +80,12 @@ __Tools & Technologies__
 <li> Tableau Public : Data Visualization </li>
 
 
-What are the primary analysis scripts/starting points? How would the analysis be rerun?
-
-```
-Give an example
-```
-
-### Requirements
-
-A step by step series of examples that tell you how to get a development/analysis env running
+### Set Up Instructions
 
 Clone Repository to Local 
 
 ```
-git clone https://github.com/your-username/social-media-mental-health.git
+git clone https://github.com/stacyA21/social-media-mental-health.git
 cd social-media-mental-health
 ```
 
@@ -86,40 +95,34 @@ Create and Activate Python Virtual Environment
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-```
-
-Create and Activate Python Virtual Environment 
-
-```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-
 ```
 
 Download necessary libraries and packages
 
 ```
 pip install -r requirements.txt
-````
+```
 
+Tableau dashboard link
+```
+```
 
-End with an example of getting some data out of the system or using. It is also worth listing what the requirements are.
 
 ## Results
 
+- 1. There is no significant difference in addiction score between genders. 
+- 2. There is a negative correlation between mental health score and addiction score. 
+- 3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
+- 4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
+- 5. There is a negative correlation between time spent on social media and mental health score.
 
+## Reflection
 
-## Contributing
-
-Details regarding how to contribute. Coding style conventions, use of tests, etc.
-
-## Notes
-
-Additional notes / precatuions / etc. to make users aware of.
+Further analysis would be more insightful over the methods used on these platform to retain users. What is also interested is how WhatsApp and KaKao stand in such analysis and if these also have a negative effect. 
 
 ## Authors
-
-List all authors, their contributions, and how to contact; Preferably an internal and external form of contact.
 
 * **Stacy Alves** - [StacyA](https://github.com/stacyA21); stacy.alves21@gmail.com
 
