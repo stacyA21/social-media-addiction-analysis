@@ -114,7 +114,7 @@ Explore the interactive visualizations here: [View on Tableau Public](https://pu
 - 3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
 - 4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
 - 5. There is a negative correlation between time spent on social media and mental health score.
-- 6. There is a positive correlation between the affects on academic performance and addiction scores.'
+- 6. There is a positive correlation between the affects on academic performance and addiction scores.
 - 7. There is a positive correlation between daily usage and affect on academic performance.
 
 
