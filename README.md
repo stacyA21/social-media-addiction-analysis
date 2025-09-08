@@ -11,10 +11,10 @@ __Research Question__
 How does social media platforms affect the mental health scores of students?
 
 To answer this question we will zoom into 3 factors: Gender, Age and Platform. 
-Question 1 : Is there a correlation between gender and mental health score?
-Question 2 : Which age group have a higher addicted score?
-Question 3 : Which Platforms have the highest addicted score and average usage?
-Question 4 : Is there a correlation between time spent on platforms and mental health scores?
+- Question 1 : Is there a correlation between gender and mental health score?
+- Question 2 : Which age group have a higher addicted score?
+- Question 3 : Which Platforms have the highest addicted score and average usage?
+- Question 4 : Is there a correlation between time spent on platforms and mental health scores?
 
 ## Data Insight
 
@@ -102,19 +102,17 @@ pip install -r requirements.txt
 
 ## Results
 
-1. There is no significant difference in addiction score between genders. 
-2. There is a negative correlation between mental health score and addiction score. 
-3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
-4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
-5. There is a negative correlation between time spent on social media and mental health score.
+- 1. There is no significant difference in addiction score between genders. 
+- 2. There is a negative correlation between mental health score and addiction score. 
+- 3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
+- 4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
+- 5. There is a negative correlation between time spent on social media and mental health score.
 
 ## Reflection
 
 Further analysis would be more insightful over the methods used on these platform to retain users. What is also interested is how WhatsApp and KaKao stand in such analysis and if these also have a negative effect. 
 
 ## Authors
-
-List all authors, their contributions, and how to contact; Preferably an internal and external form of contact.
 
 * **Stacy Alves** - [StacyA](https://github.com/stacyA21); stacy.alves21@gmail.com
 
