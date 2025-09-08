@@ -1,20 +1,31 @@
-# Social media addiction analysis
+# Mind Over Media 
+## Analyzing Social Media’s Effects on Mental Health
+
 My final project for SHARE Academy  
+
+__Summary__
+
+This project analyzes how social media usage across social media platforms relates to the mental health of students aged 18 to 24. Using a Kaggle dataset, Python for data analysis, and Tableau for visualization, the study highlights potential correlations between platform usage and self-reported well-being.
 
 __Project Description__
 
-In this digital age, students are increasingly exposed to social media, which can have both positive and negative impacts on mental well-being. This project analyzes usage patterns across platforms such as Instagram, TikTok, Snapchat, Facebook, and X (formerly Twitter), and investigates how these patterns relate to self-reported mental health scores.
+In today’s digital age, social media plays a central role in students’ daily lives, shaping both positive and negative aspects of mental well-being. This project explores usage patterns across major platforms and examines their relationship to self-reported mental health scores.
 
-The primary goal of this analysis is to identify which social media platforms may negatively influence the mental health of students aged 18 to 24. The dataset was sourced from Kaggle, and the analysis was conducted using Python for data cleaning and statistical modeling. Visualizations of the results are available on a Tableau Public dashboard, providing clear and interactive representations of key findings.
+The primary aim is to identify potential correlations between platform usage and mental health among students aged 18 to 24. 
+While mental health is a complex and multifaceted issue, this analysis seeks to uncover trends and insights that may highlight platforms with greater negative impacts.
+
+The dataset was sourced from Kaggle, and the analysis was performed using Python for data cleaning, statistical modeling, and exploration. Results are visualized through an interactive Tableau Public dashboard, providing clear and accessible insights into the findings.
 
 __Research Question__
+
+Main question:
 How does social media platforms affect the mental health scores of students?
 
 To answer this question we will zoom into 3 factors: Gender, Age and Platform. 
-- Question 1 : Is there a correlation between gender and mental health score?
-- Question 2 : Which age group have a higher addicted score?
-- Question 3 : Which Platforms have the highest addicted score and average usage?
-- Question 4 : Is there a correlation between time spent on platforms and mental health scores?
+- Question 1 : To what extent is gender associated with differences in mental health scores?
+- Question 2 : Which age group demonstrates the highest levels of social media addiction?
+- Question 3 : Which platforms are most strongly linked to higher addiction scores and greater average usage?
+- Question 4 : How strongly is time spent on social media correlated with mental health scores?
 
 ## Data Insight
 
@@ -69,7 +80,7 @@ __Tools & Technologies__
 <li> Tableau Public : Data Visualization </li>
 
 
-### Requirements
+### Set Up Instructions
 
 Clone Repository to Local 
 
@@ -84,21 +95,20 @@ Create and Activate Python Virtual Environment
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-```
-
-Create and Activate Python Virtual Environment 
-
-```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-
 ```
 
 Download necessary libraries and packages
 
 ```
 pip install -r requirements.txt
-````
+```
+
+Tableau dashboard link
+```
+```
+
 
 ## Results
 
