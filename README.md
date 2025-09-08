@@ -39,14 +39,14 @@ The dataset consists of student responses and includes the following columns:
 For this project, the following columns are the focus:
 
 - **`Student_ID`** – Unique identifier for each participant  
-- **`Age`** – Age of the student  
+- **`Age`** – Age of the student
+- **`Gender`** - self-reported gender, recorded as “Male” or “Female” to allow for demographic breakdowns in usage and outcome measures
 - **`Avg_Daily_Usage_Hours`** – Average hours spent on social media per day  
 - **`Most_Used_Platform`** – Primary social media platform used by the student  
 - **`Sleep_Hours_Per_Night`** – Average hours of sleep per night  
 - **`Mental_Health_Score`** – Self-reported mental health score  
-- **`Addicted_Score`** – A score estimating social media addiction level  
-
-These variables were selected because they are most relevant for exploring correlations between **social media usage** and **student mental health**.
+- **`Addicted_Score`** – A composite score from 1 (low addiction) to 10 (high addiction) based on a standardized survey scale (e.g., Bergen Social Media Addiction Scale), quantifying the degree of problematic usage.
+- **`Affects_Academic_Performance`** - A binary indicator (“Yes”/“No”) reflecting whether the student perceives their social media use as having a negative impact on their academic performance.
 
 
 __Data Contact__
@@ -104,11 +104,9 @@ pip install -r requirements.txt
 
 1. There is no significant difference in addiction score between genders. 
 2. There is a negative correlation between mental health score and addiction score. 
-3. Younger people are more likely to be addicted to social media.
-4. The most addictive platforms are Snapchat, TikTok, and Instagram. 
-5. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
-6. Different age groups have different platform preferences. 
-7. There is a negative correlation between time spent on social media and mental health score.
+3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
+4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
+5. There is a negative correlation between time spent on social media and mental health score.
 
 ## Reflection
 
