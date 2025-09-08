@@ -110,39 +110,45 @@ print('According to our analysis there is no correlation between gebder and addi
 'Next we will look at the age of the participants and see if there is a connection between age and addiction score.\n')
 
 # create the distribution plot for age 
-print('Which age group is more addicted to social media?')
 
 #distribution
-sns.histplot(df['Age'], kde=True, bins=20)
+sns.histplot(df['Age'], kde=True, bins=25, color='blue', edgecolor='black')
 plt.title('Distribution of Age in Social Media Addiction Dataset')
 plt.xlabel('Age')
 plt.ylabel('Frequency')
 plt.show()
 plt.close()
 
-# check the average addiction score for each age group
-age_groups = pd.cut(df['Age'], bins=[0, 18, 25], labels=['0-18', '19-25'])
-df['Age_Group'] = age_groups
-average_addiction_by_age = df.groupby('Age_Group', observed=False)['Addicted_Score'].mean().reset_index()
-print('Average Addiction Score by Age Group:')
-print(average_addiction_by_age)
-sns.barplot(x='Age_Group', y='Addicted_Score', data=average_addiction_by_age)
-plt.title('Average Addiction Score by Age Group')
-plt.xlabel('Age Group')
+print('Distribution of Age in Social Media Addiction Dataset')
+#average age of the participants
+average_age = df['Age'].mean()
+print(f'Average Age of participants: {average_age}')
+
+#which age group have a higher addicted score
+print('Which age group have a higher addicted score?')
+average_addiction_by_age = df.groupby('Age')['Addicted_Score'].mean().reset_index()
+print('Average Addiction Score by Age:')
+order_addicytion_by_age = average_addiction_by_age.sort_values(by='Addicted_Score', ascending=False)
+print(order_addicytion_by_age.head(5))
+
+#add amount of participants in each age group
+age_group_counts = df['Age'].value_counts().reset_index()
+age_group_counts.columns = ['Age', 'Count']
+average_addiction_by_age = average_addiction_by_age.merge(age_group_counts, on='Age')
+print('Average Addiction Score by Age with Participant Counts:')
+print(average_addiction_by_age.sort_values(by='Addicted_Score', ascending=False).head(5))   
+
+#plot the average addiction score by age
+sns.lineplot(x='Age', y='Addicted_Score', data=average_addiction_by_age)
+plt.title('Average Addiction Score by Age') 
+plt.xlabel('Age')
 plt.ylabel('Average Addiction Score')
 plt.show()
 plt.close()
 
-#calcilate the average addiction score for each age group
-average_addiction_0_18 = np.mean(df[df['Age_Group']=='0-18']['Addicted_Score'])
-print(f'Average Addiction Score for Age Group 0-18: {average_addiction_0_18}')
-average_addiction_19_25 = np.mean(df[df['Age_Group']=='19-25']['Addicted_Score'])
-print(f'Average Addiction Score for Age Group 19-25: {average_addiction_19_25}')
-
-print('Conclusion: The average addiction score for the age group 0-18 is higher than the age group 19-25. \n'
-'Younger people are more likely to be addicted to social media. \n'
-'Meaning that social media addiction is more prevalent among younger people.\n')
-print('Next we will look at the different platforms and see which platforms are the most addictive.\n')   
+print('Eventhough the age group 16-19 have the highest average addiction score, \n'
+      'it is important to note that not all age groups have the same amount of participants. \n'
+        'Thus, the results might be skewed by the amount of participants in each age group.\n')
 
 print('Analysis of Social Media Platforms')
 #which platform is the most used
@@ -254,12 +260,7 @@ plt.close()
  
 print(average_daily_usage_by_platform.head(5))
 
-#which platform do age group 0-18 use the most
-most_used_platform_0_18 = df[df['Age_Group']=='0-18']['Most_Used_Platform'].mode()[0]
-print(f'The most used platform by age group 0-18 is: {most_used_platform_0_18}')    
-#which platform do age group 19-25 use the most
-most_used_platform_19_25 = df[df['Age_Group']=='19-25']['Most_Used_Platform'].mode()[0]
-print(f'The most used platform by age group 19-25 is: {most_used_platform_19_25}\n')
+
 
 print('Conclusion: The most used platform by people with lower sleep hours is TikTok. \n'
 'Thus, TikTok users may be more likely to have lower sleep hours. \n'
@@ -278,11 +279,6 @@ print('Overall, our analysis suggests that TikTok usage may be associated with l
 
 print('Next we will look at KakaoTalk and Snapchat\n')
 print('KakaoTalk.\n')
-#which age group uses kakao talk the most
-most_used_platform_kakao = df[df['Most_Used_Platform']=='KakaoTalk']
-most_used_platform_kakao_age_group = most_used_platform_kakao['Age_Group'].mode()[0]
-print(f'The age group that uses KakaoTalk the most is: {most_used_platform_kakao_age_group}') 
-
 print('Ive visited KakaoTalks website and it is a messaging app that is popular in South Korea,\n'
 'which is similar to WhatsApp. \n'
 'As Whatsapp is not categorized as a social media platform in this analysis, so is KakoaTalk excluded.\n') 
@@ -301,26 +297,12 @@ average_addiction_snapchat = snapchat_users['Addicted_Score'].mean()
 average_addiction_tiktok = tiktok_users['Addicted_Score'].mean()
 print(f'Average Addiction Score for Snapchat users: {average_addiction_snapchat}')
 print(f'Average Addiction Score for TikTok users: {average_addiction_tiktok}\n')
-
-#Snapchat users
-most_used_platform_snapchat = df[df['Most_Used_Platform']=='Snapchat']
-most_used_platform_snapchat_age_group = most_used_platform_snapchat['Age_Group'].mode()[0]
-print(f'The age group that uses Snapchat the most is: {most_used_platform_snapchat_age_group}\n')
+  
 
 print('The average addiction score for Snapchat users is higher than the average addiction score for TikTok users. \n'
-'Suggesting that Snapchat users may be more likely to be addicted to social media. \n'
-'The age group that uses Snapchat the most is 0-18, while the age group that uses TikTok the most is 19-25. \n'
-'Thus, younger people are more likely to use Snapchat, while older people are more likely to use TikTok. \n')
+'Suggesting that Snapchat users may be more likely to be addicted to social media. \n')
 print('Overall, our analysis suggests that Snapchat usage may be associated with higher addiction scores. \n'
 'This is concerning because of the effects that it might have on the users mental health.\n')
-
-#Tiktok users 
-most_used_platform_tiktok = df[df['Most_Used_Platform']=='TikTok']
-most_used_platform_tiktok_age_group = most_used_platform_tiktok['Age_Group'].mode()[0]
-print(f'The age group that uses TikTok the most is: {most_used_platform_tiktok_age_group}\n')
-print('The age group that uses TikTok the most is 19-25, while the age group that uses Snapchat the most is 0-18. \n'
-'Thus younger people are more likely to use Snapchat, while older people are more likely to use TikTok. \n'
-'Different age groups use different platforms, however does the effects differ?.\n')
 
 #correlation between time spent on social media and mental_health_score_by_platform
 print('Is there a significant correlation between time spent on social media and mental health score?')
@@ -340,21 +322,37 @@ print('Conclusion: There is a negative correlation between time spent on social 
 'or people with poor mental health are more likely to spend more time on social media. \n'
 'Social media usage can have a negative impact on mental health, even though this is widely known, it is important to keep in mind \n'
 'that the landscape is big and it might be the time we spent on social media platforms tied to the methods that are utilized to keep people longer on them that might be\n'
-'something to analyse and ethically question, especially for social media applications that are more prevalent in age groups under 18.\n') 
+'something to analyse and ethically question, especially for social media applications that are more prevalent in younger age groups.\n') 
+
+#effects of social media and academic performance
+
+#change string yes/no to 1/0
+df['Affects_Academic_Performance'] = df['Affects_Academic_Performance'].map({'Yes': 1, 'No': 0})
+
+print('Effects of Social Media and Affects Academic Performance')
+correlation_academic_performance = df['Affects_Academic_Performance'].corr(df['Addicted_Score'])
+print(f'Correlation between Affects_Academic_Performance and Addicted_Score: {correlation_academic_performance}')
+t_stat, p_value = stats.pearsonr(df['Affects_Academic_Performance'], df['Addicted_Score'])
+print(f'T-test results: t-statistic = {t_stat}, p-value = {p_value}')
+if p_value < 0.05:
+    print('The correlation between Affects_Academic_Performance and Addicted_Score is statistically significant.\n')
+else:
+    print('The correlation between Affects_Academic_Performance and Addicted_Score is not statistically significant.\n')   
+print('Conclusion: There is a positive correlation between Affects_Academic_Performance and Addicted_Score. \n'
+'Suggesting that as addiction score increases, the negative effects on academic performance also increase. \n'
+'Thus, social media addiction can have a negative impact on academic performance.\n') 
+
 
 #final conclusion
 print('Final Conclusion: \n'
 '1. There is no significant difference in addiction score between genders. \n'
 '2. There is a negative correlation between mental health score and addiction score. \n'
-'3. Younger people are more likely to be addicted to social media. \n'
-'4. The most addictive platforms are Snapchat, TikTok, and Instagram. \n'
-'5. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage. \n'
-'6. Different age groups have different platform preferences. \n'
-'7. There is a negative correlation between time spent on social media and mental health score. \n')
+'3. The most addictive platforms are Snapchat, TikTok, and Instagram. \n'
+'4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage. \n'
+'5. There is a negative correlation between time spent on social media and mental health score. \n')
+'6. There is a positive correlation between the affects on academic performance and addiction scores.\n'
 
 print('Overall, our analysis suggests that social media addiction is a complex issue that is influenced by a variety of factors,\n'
 'including age, platform usage, and mental health. \n'
 'It is important to continue to study this issue in order to better understand the effects of social media on individuals and society as a whole.\n')
-
-
 
