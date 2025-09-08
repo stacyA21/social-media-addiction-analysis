@@ -107,7 +107,14 @@ pip install -r requirements.txt
 
 Tableau dashboard link
 ```
+ 
+
+
 ```
+## Tableau Dashboard  
+[![Tableau Dashboard Preview](assets/tableau_dashboard.png)](https://public.tableau.com/views/socialmediaaddiction_17573283795910/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+
+*Click the image to view the full interactive dashboard on Tableau Public.*
 
 
 ## Results
