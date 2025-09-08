@@ -301,6 +301,10 @@ print(f'Average Addiction Score for TikTok users: {average_addiction_tiktok}\n')
 
 print('The average addiction score for Snapchat users is higher than the average addiction score for TikTok users. \n'
 'Suggesting that Snapchat users may be more likely to be addicted to social media. \n')
+print('However, there are only 8 Snapchat users in the dataset, \n'
+'which is a very small sample size compared to the 70 TikTok users. \n'
+'Thus, the results may be skewed by the small sample size of Snapchat users. \n')
+
 print('Overall, our analysis suggests that Snapchat usage may be associated with higher addiction scores. \n'
 'This is concerning because of the effects that it might have on the users mental health.\n')
 
@@ -341,6 +345,14 @@ else:
 print('Conclusion: There is a positive correlation between Affects_Academic_Performance and Addicted_Score. \n'
 'Suggesting that as addiction score increases, the negative effects on academic performance also increase. \n'
 'Thus, social media addiction can have a negative impact on academic performance.\n') 
+
+#how many tiktok users are there in the dataset
+tiktok_users_count = df[df['Most_Used_Platform'] == 'TikTok'].shape[0]
+print(f'Number of TikTok users in the dataset: {tiktok_users_count}')
+
+#how many snapchat users are there in the dataset
+snapchat_users_count = df[df['Most_Used_Platform'] == 'Snapchat'].shape[0]
+print(f'Number of Snapchat users in the dataset: {snapchat_users_count}')   
 
 
 #final conclusion
