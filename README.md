@@ -109,18 +109,18 @@ Explore the interactive visualizations here: [View on Tableau Public](https://pu
 
 ## Results
 
-- 1. There is no significant difference in addiction score between genders. 
-- 2. There is a negative correlation between mental health score and addiction score. 
-- 3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
-- 4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
-- 5. There is a negative correlation between time spent on social media and mental health score.
-- 6. There is a positive correlation between the affects on academic performance and addiction scores.
-- 7. There is a positive correlation between daily usage and affect on academic performance.
+1. There is no significant difference in addiction score between genders. 
+2. There is a negative correlation between mental health score and addiction score. 
+3. The most addictive platforms are Snapchat, TikTok, and Instagram. 
+4. TikTok usage may be associated with lower sleep hours, lower mental health scores, and higher social media usage.
+5. There is a negative correlation between time spent on social media and mental health score.
+6. There is a positive correlation between the affects on academic performance and addiction scores.
+7. There is a positive correlation between daily usage and affect on academic performance.
 
 
 ## Reflection
 
-Further analysis would be more insightful over the methods used on these platform to retain users. What is also interested is how WhatsApp and KaKao stand in such analysis and if these also have a negative effect. 
+Further analysis would be more insightful over the methods used on these platform to retain users. Further analysis could be also done on the effects of lowered engagement on these platform. Questions such as does spending less time on social media affect the mental health scores?
 
 ## Authors
 
