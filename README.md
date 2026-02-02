@@ -105,7 +105,7 @@ Download necessary libraries and packages
 pip install -r requirements.txt
 ```
 ## Tableau Dashboard  
-Explore the interactive visualizations here: [View on Tableau Public](https://public.tableau.com/views/socialmediaaddiction_17573283795910/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Explore the interactive visualizations here: [View on Tableau Public](https://public.tableau.com/views/StudentaddictionsocialmediaProjectofficial1/Story1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Results
 
