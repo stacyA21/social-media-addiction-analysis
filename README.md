@@ -21,7 +21,7 @@ __Research Question__
 Main question:
 How does social media platforms affect the mental health scores of students?
 
-To answer this question we will zoom into 3 factors: Gender, Age and Platform. 
+To answer this question we will zoom into 4 factors: Gender, Age and Platform, Time spent on Platform 
 - Question 1 : To what extent is gender associated with differences in mental health scores?
 - Question 2 : Which age group demonstrates the highest levels of social media addiction?
 - Question 3 : Which platforms are most strongly linked to higher addiction scores and greater average usage?
